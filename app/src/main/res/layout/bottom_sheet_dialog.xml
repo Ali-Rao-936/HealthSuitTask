@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <ImageView
+            android:contentDescription="@string/this_is_an_image"
+            android:id="@+id/idIVCourse"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/share_button" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_toEndOf="@+id/idIVCourse"
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/order_now"
+            android:textAllCaps="false"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idIVCourse"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/description"
+            android:textColor="#838396"
+            android:fontFamily="@font/open_sans_light"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/txtDescription"
+            android:lines="15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="#838396"
+            android:fontFamily="@font/open_sans_regular"
+            android:textSize="12sp" />
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
